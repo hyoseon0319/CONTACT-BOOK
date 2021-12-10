@@ -5,23 +5,23 @@
 </head>
 <body>
     <%- include('../partials/nav') %>
-    <div class="contact contact-new">
+    <div class="container contact contact-new">
         <h2>New</h2>
         <form class="contact-form" action="/contacts/<%= contact._id %>?_method=put" method="post">
-            <div>
+            <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" value="<%= contact.name %>" />
+                <input type="text" name="name" value="<%= contact.name %>" class="form-control" />
             </div>
-            <div>
+            <div class="form-group">
                 <label for="name">email</label>
-                <input type="text" name="email" value="<%= contact.email %>" />
+                <input type="text" name="email" value="<%= contact.email %>" class="form-control" />
             </div>
-            <div>
+            <div class="form-group">
                 <label for="name">phone</label>
-                <input type="text" name="phone" value="<%= contact.phone %>" />
+                <input type="text" name="phone" value="<%= contact.phone %>" class="form-control" />
             </div>
             <div>
-                <button type="submit">Submit</button>
+                <button class="btn btn-primary" type="submit">Submit</button>
             </div>
         </form>
     </div>
